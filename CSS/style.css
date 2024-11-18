@@ -1,0 +1,272 @@
+/* Memo :
+
+    vh = "viewport height" : pourcentage de hauteur de la fenêtre 
+    vw = "viewport widht" : pourcentage de largeur de la fenêtre
+
+    h1
+    color: #f94c43;                         Rouge
+
+    Font de page
+    color: #fce300;                         beige
+
+    couleur header
+    background-color: rgba(0, 0, 0);        Noir
+
+    couleur Texte
+    color: #f6d317;                         jaune-orangé(lien)
+
+    couleur footer
+    background-color: rgba(0, 0, 0, 0.8);   Gris
+
+    Page actuel
+    color: #fbff00;                         jaune(lien)
+
+
+    Decouverte 
+    
+    background image
+    background-size cover
+    background-position center
+    background-blend-mode darken
+    text-transform uppercase
+
+    voir github auer404
+*/
+
+body{
+    background-color:antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300;
+    margin: 0;
+    /* width: 60%; */
+    /* text-align: center; */
+}
+/********************** Menu Nav **********************/
+header{
+    height: 11vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    /* 
+    border-width: 3px;
+    border-style: solid 
+    border-color: black;*/
+    /* Version raccourci */
+    /* border:3px solid black; */
+
+    padding: 1%; 
+    
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+
+    display: flex;
+    gap: 30px;
+
+
+}
+
+nav a{
+    color: #f6d317;
+    text-decoration: none;
+    font-family: sans-serif;
+    /* font-style: light; */
+}
+
+nav a:hover{
+    color: #f94c43;
+    /* font-size: large; */
+    transform: scale(1.1);
+}
+
+h1{
+    color:#f94c43;
+    text-align: center;
+    justify-content: center;
+    /* border: none; */
+    /* padding: 3px; */
+    padding: 10px;
+    margin: 0;
+    font-family: "Nunito Sans";
+}
+
+.page_actuel{
+    color: #fbff00;
+    font-weight: bold;
+}
+/********************** Nav Fin ***********************/
+
+/*********************** Image ************************/
+.parallax {
+    background-image: url(/img/Luv-Resval.png.webp);
+    height: 600px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax_img2 {
+    background-image: url(/img/Luv-Resval.png.webp);
+    height: 300px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}/*********************** Fin Image ********************/
+
+/* img{
+    width: 80%;
+    padding-left: 30px;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px;/
+    display: block;
+    margin: auto;
+} */
+
+/* p{
+    /* padding-top: 10px; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    
+} */
+
+
+.p1{
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+}
+.p2{
+    padding-left: 10px;
+}
+.padding{
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f6d317;
+    padding: 10px;
+    height: 15vh;
+    text-align: start;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: #fbff00;
+
+}
+
+/* ---------------------Page Discographie--------------------- */
+
+    
+   
+hr{
+  border: none;
+  border-top: 3px solid #000000;
+  overflow: visible;
+  text-align: center;
+  height: 5px;    
+}
+img{
+    width: 34vw;
+    height: auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    margin: 1%;
+}
+/* h2{
+    text-align: center;
+} */
+.container{
+    display: flex;
+    padding: auto;
+    margin: 1%;
+}
+.container_reverse{
+    display: flex;
+    flex-direction:row-reverse;
+    margin: 1%;
+}
+.album h3{
+    display: block;
+    text-align: center;
+}
+.album h2{
+    display: block;
+    text-align: center;
+}
+.container img{
+    margin: auto;
+    margin-left: 0;
+}
+.container_reverse img{
+    margin: auto;
+    margin-right: 0;
+}
+.setlist{
+    width: auto;
+    height: 35%;
+    padding: 1%;
+    padding-left: 0;
+    margin: auto;
+}
+
+ol{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+}
+li{
+    margin-right: 40px;
+    /* font-family: Snell Roundhand; */
+
+}
+/* .morceauxZ,  */
+.morceaux{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* margin-left: 1%; */
+}
+/* .screen{
+    display: none;
+} */
+li, a{
+    color: black;
+}
+.date{
+    text-align: end;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* text-align: end; */
+    margin: 0;
+}
+/* @media  screen and (min-width: 1256px) {
+    .morceauxZ{
+        display: none;
+        flex-wrap: none;
+    }
+    .screen{
+        display: flex;
+    }
+} */

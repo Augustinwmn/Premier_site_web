@@ -270,3 +270,8 @@ main p{
         display: flex;
     }
 } */
+
+/* ************************************ */
+.news h2{
+    text-align: center;
+}

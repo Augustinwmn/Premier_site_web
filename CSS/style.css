@@ -275,3 +275,53 @@ main p{
 .news h2{
     text-align: center;
 }
+.colone, .wiki{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#tiktok, #ytb, #X, #insta, #wiki{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+
+}
+#tiktok a, #ytb a, #X a, #insta a, #wiki a{
+    width: 100%;
+}
+#tiktok a button, #ytb a button, #X a button, #insta a button, #wiki a button{
+    width: 100%;
+    height: 200px;
+    font-size: 4em;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    background-color:#f94c43;
+    /* background-image: ""; */
+    border: none;
+    border-radius: 20px;
+    box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+#tiktok a button:active, #ytb a button:active, #X a button:active, #insta a button:active, #wiki a button:active{
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+div a button img{
+    margin: auto; 
+    margin-left: 0;   
+    margin-right: 10px;
+    width: 15%;
+    background-color: transparent;
+}
+.news p{
+    /* text-align: center; */
+    align-content: center;
+}

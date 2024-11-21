@@ -32,7 +32,9 @@
 
     voir github auer404
 */
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color:antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
@@ -40,6 +42,24 @@ body{
     margin: 0;
     /* width: 60%; */
     /* text-align: center; */
+}
+#ancre{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    bottom: 10px;
+    right: 10px;
+    /* background-color: #ff00ff; */
+    background-color: transparent;
+}
+#ancre a button{
+    border: none;
+    width: 70px;
+    height: 70px;
+    opacity: 0.6;
+}
+#ancre a button img{
+    width: 80%;
+    margin: 0;
 }
 /********************** Menu Nav **********************/
 header{
@@ -105,7 +125,7 @@ h1{
 
 /*********************** Image ************************/
 .parallax {
-    background-image: url(/img/Luv-Resval.png.webp);
+    background-image: url(../img/Luv-Resval.png.webp);
     height: 600px;
     width: 100%;
     background-attachment: fixed;
@@ -114,7 +134,7 @@ h1{
     background-size: cover;
 }
 .parallax_img2 {
-    background-image: url(/img/Luv-Resval.png.webp);
+    background-image: url(../img/Luv-Resval.png.webp);
     height: 300px;
     width: 100%;
     background-attachment: fixed;

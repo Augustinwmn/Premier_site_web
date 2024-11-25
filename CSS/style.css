@@ -59,6 +59,7 @@ body{
 }
 #ancre a button img{
     width: 80%;
+    height: auto;
     margin: 0;
 }
 /********************** Menu Nav **********************/
@@ -282,6 +283,9 @@ main p{
 .news h2{
     text-align: center;
 }
+#video{
+    text-align: center;
+}
 .reseau{
     display: flex;
     justify-content: center;
@@ -290,7 +294,7 @@ main p{
     gap: 5px;
 }
 .colone{
-    width: 5%;
+    min-width: 7%;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -298,8 +302,7 @@ main p{
     margin-bottom: 25px; */
 }
 /* #tiktok, #ytb, #X, #insta, #wiki{
-    width: 100%;
-
+    padding: 5px;
 } */
 #tiktok a, #ytb a, #X a, #insta a, #wiki a{
     width: 100%;
@@ -330,7 +333,8 @@ div a button img{
     margin: auto; 
     margin-left: 0;   
     margin-right: 10px;
-    width: 15%;
+    width: auto;
+    height: 15px;
     background-color: transparent;
 }
 .news p{

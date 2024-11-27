@@ -296,6 +296,7 @@ main p{
     position: relative;
     width: 25%;
     aspect-ratio: 1/1;
+    overflow: hidden;
 }
 /* .fan_art  */
 .content img{
@@ -306,11 +307,33 @@ main p{
     vertical-align: middle;
 }
 .a_propos{
+    background-color: rgba(245, 245, 245, 0.575);
+    bottom: 0;
     position: absolute;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    opacity: 0;
 }
-/* .fan_art .content img:hover{
+.fan_art .content:hover .a_propos{
+    height: 100%;
+    transform: translateY(0);
+    transition: 0.5s;
+    opacity: 1;
+}
+.fan_art .content:hover img{
+    transition: 0.5s;
+    filter: grayscale();
+    /* transform: scale(1.05); */
+}
+.a_propos a{
+ font-weight: 500;
+ text-decoration:underline;
+}
 
-} */
 .reseau{
     display: flex;
     justify-content: center;

@@ -242,7 +242,8 @@ ol{
     /* flex-direction: column; */
 }
 li{
-    margin-right: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
     /* font-family: Snell Roundhand; */
 
 }
@@ -331,9 +332,18 @@ main p{
 }
 .a_propos a{
  font-weight: 500;
- text-decoration:underline;
+ /* text-decoration:underline; */
 }
-
+.a_propos a .savoir_plus{
+    background-color: #f94c43;
+    border: none;
+    border-radius: 10px;
+    padding: 3%;
+}
+.a_propos a .savoir_plus:hover{
+    background-color: #ff5c54;
+}
+/* ************* Footer ************** */
 .reseau{
     display: flex;
     justify-content: center;

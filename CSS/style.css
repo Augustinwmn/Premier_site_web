@@ -32,6 +32,14 @@
 
     voir github auer404
 */
+::-webkit-scrollbar{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+::-webkit-scrollbar-thumb{
+    background-color: bisque;
+    width: .6rem;
+    border-radius: .5rem;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -115,14 +123,15 @@ h1{
     background-size: cover;
 }
 .parallax_img2 {
-    background-image: url(../img/Luv-Resval.png.webp);
-    height: 300px;
+    background-image: url(../img/Capture+d’écran+2021-05-18+à+14.39.57.png);
+    height: 400px;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}/*********************** Fin Image ********************/
+}
+/*********************** Fin Image ********************/
 
 
 .p1{
@@ -288,10 +297,12 @@ main p{
     align-content: center;
     border: solid 3px #f94c43;
     cursor: pointer;
-
+}
+.a_propos a button.savoir_plus::before{
+    content: 'En savoir plus';
 }
 /* ************* Footer ************** */
-.reseau{
+.reseau, .logo_img{
     display: flex;
     justify-content: center;
     margin-top: auto;
@@ -335,36 +346,65 @@ div a button img{
     width: auto;
     height: 15px;
 }
+.logo_img a img{
+    display: none;
+    margin: auto; 
+    margin-left: 0;   
+    margin-right: 10px;
+    width: auto;
+    height: 15px;
+}
 .news p{
-    /* text-align: center; */
     align-content: center;
 }
 footer{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: #f6d317;
-    /* padding: 1%; */
+    padding-top: 1%;
+    padding-bottom: 1%;
     max-height: 20vh;
     min-height: 10vh;
     text-align: start;
-
-    
+}
+footer p{
+    margin-left: 1%;
 }
 footer a{
     text-decoration: none;
     color: #fbff00;
-
 }
+
 /***** RESPONSIVE *****/
-/* @media screen and (max-width: 1750px) {
-    footer{
-        flex: 1;
-    }
-} */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1115px) {
+
+    /*** Page 2 ***/
     img{
         width: 300px;
         height: 300px;
+    }
+    .parallax {
+        height: 400px;
+        width: 100%;
+    }
+    .parallax_img2 {        
+        background-image: url(../img/resval_grunt500x500.jpg);
+        height: 400px;
+        width: 100%;
+    }
+    /*** Page 3 ***/
+    .a_propos p{
+        display: none;
+    }
+    .a_propos a .savoir_plus{
+        width: 50%;
+    }
+    .a_propos a .savoir_plus:hover{
+        width: 55%;
+    }
+    /* FOOTER */
+    .colone{
+        min-width: 15%;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -375,6 +415,18 @@ footer a{
     nav a{
         justify-content: space-around;    
         font-size: 0.9rem;
+    }
+    /*** Page 1 ***/
+    .acceuil{
+        font-size: 0.9rem;
+    }    
+    .parallax {
+        height: 400px;
+        width: 100%;
+    }
+    .parallax_img2 {        
+        height: 400px;
+        width: 100%;
     }
     /*** Page 2 ***/
     .container, .container_reverse{
@@ -400,11 +452,35 @@ footer a{
         width: 90%;
         margin: auto;
     }
-    #tiktok a button, #ytb a button, #X a button, #insta a button, #wiki a button{
-        font-size: 0.5rem;
+}
+@media screen and (max-width: 912px) {
+    .a_propos a .savoir_plus{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 787px) {
+    .a_propos a .savoir_plus{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width: 710px) {
+    .a_propos a button.savoir_plus::before{
+        content: '';
+    }
+    .a_propos a button.savoir_plus::after{
+        font-size: 0.7rem;
+        content: 'Voir';
     }
 }
 @media screen and (max-width: 500px) {
+    #ancre a{
+        height: 50px;
+        width: 100%;
+    }
+    #ancre a button{
+        width: 50px;
+        height: 50px;
+    }
     nav ul{
         gap: 20px;
     }
@@ -412,6 +488,42 @@ footer a{
         margin: 0;
     }
     nav a{
+        font-size: 0.8rem;
+    }
+    /*** Page 1 ***/
+    .acceuil{
         font-size: 0.7rem;
     }
+    .parallax {
+        height: 400px;
+        width: 100%;
+    }
+    .parallax_img2 {        
+        height: 400px;
+        width: 100%;
+    }
+    /*** Page 3 ***/
+    .a_propos a .savoir_plus{
+        width: 70%;
+    }
+    .a_propos a .savoir_plus:hover{
+        width: 75%;
+    }
+    /* FOOTER */
+    #tiktok a button, #ytb a button, #X a button, #insta a button, #wiki a button{
+        font-size: 0.5rem;
+    }
+    #tiktok a, #ytb a, #X a, #insta a, #wiki a{
+        display: none;
+        margin: auto; 
+        margin-left: 0;   
+        margin-right: 10px;
+        width: auto;
+        height: 10px;
+    }
+    .logo_img a img{
+        display: flex;
+
+    }
 }
+

@@ -38,8 +38,9 @@ html{
 body{
     background-color:antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 300;
+    /* font-size: 300; */
     margin: 0;
+    font-size: 1rem;
 }
 #ancre{
     display: none;
@@ -47,7 +48,6 @@ body{
     transform: translate(-50%, -50%);
     bottom: 10px;
     right: 10px;
-    /* background-color: #ff00ff; */
 }
 #ancre a{
     height: 70px;
@@ -57,7 +57,6 @@ body{
     border: none;
     width: 70px;
     height: 70px;
-    /* opacity: 0.6; */
     background-color: transparent;
 }
 #ancre a button img{
@@ -67,60 +66,38 @@ body{
 }
 /********************** Menu Nav **********************/
 header{
-    /* height: 11vh; */
     width: 100%;
     background-color: rgba(0, 0, 0);
 }
 nav{
     display: flex;
     justify-content: center;
-    /* 
-    border-width: 3px;
-    border-style: solid 
-    border-color: black;*/
-    /* Version raccourci */
-    /* border:3px solid black; */
-
-    padding: 1%; 
-    
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
-
-ul{
+nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-
-
     display: flex;
     gap: 30px;
-
-
 }
-
 nav a{
     color: #f6d317;
     text-decoration: none;
     font-family: sans-serif;
-    /* font-style: light; */
 }
-
 nav a:hover{
     color: #f94c43;
-    /* font-size: large; */
-    transform: scale(1.1);
 }
-
 h1{
     color:#f94c43;
     text-align: center;
-    justify-content: center;
-    /* border: none; */
-    /* padding: 3px; */
     padding: 10px;
     margin: 0;
     font-family: "Nunito Sans";
 }
-
 .page_actuel{
     color: #fbff00;
     font-weight: bold;
@@ -146,21 +123,6 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
 }/*********************** Fin Image ********************/
-
-/* img{
-    width: 80%;
-    padding-left: 30px;
-    /* padding-top: 10px; */
-    /* padding-bottom: 10px;/
-    display: block;
-    margin: auto;
-} */
-
-/* p{
-    /* padding-top: 10px; */
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    
-} */
 
 
 .p1{
@@ -194,16 +156,10 @@ hr{
   height: 5px;    
 }
 img{
-    width: 34vw;
-    height: auto;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
+    width: 400px;
+    height: 400px;
     margin: 1%;
 }
-/* h2{
-    text-align: center;
-} */
 .container{
     display: flex;
     padding: auto;
@@ -237,30 +193,21 @@ img{
     padding-left: 0;
     margin: auto;
 }
-
 ol{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
-    /* justify-content: center; */
-    /* flex-direction: column; */
 }
 li{
     margin-right: 20px;
     margin-left: 20px;
-    /* font-family: Snell Roundhand; */
 
 }
-/* .morceauxZ,  */
 .morceaux{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* margin-left: 1%; */
 }
-/* .screen{
-    display: none;
-} */
 li, a{
     color: black;
 }
@@ -273,17 +220,7 @@ main p{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
 }
-/* @media  screen and (min-width: 1256px) {
-    .morceauxZ{
-        display: none;
-        flex-wrap: none;
-    }
-    .screen{
-        display: flex;
-    }
-} */
-
-/* ************************************ */
+/* ***************** Page 3 ******************* */
 .news h2{
     text-align: center;
 }
@@ -295,14 +232,12 @@ main p{
     margin-bottom: 20px;
     gap: 10px;
 }
-/* .fan_art  */
 .content{
     position: relative;
     width: 25%;
     aspect-ratio: 1/1;
     overflow: hidden;
 }
-/* .fan_art  */
 .content img{
     margin: 0;
     width: 100%;
@@ -335,7 +270,6 @@ main p{
 }
 .a_propos a{
  font-weight: 500;
- /* text-decoration:underline; */
 }
 .a_propos a .savoir_plus{
     transition: .3s;
@@ -345,13 +279,13 @@ main p{
     border-radius: 10px;
     width: 40%;
     height: 40px;
-    padding: 3%;
 }
 .a_propos a .savoir_plus:hover{
     transition: .3s;
     background-color: white;
     color: #f94c43;
-    width: 60%;
+    width: 45%;
+    align-content: center;
     border: solid 3px #f94c43;
     cursor: pointer;
 
@@ -365,30 +299,21 @@ main p{
     gap: 5px;
 }
 .colone{
-    min-width: 7%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* margin-top: 25px;
-    margin-bottom: 25px; */
+    min-width: 8%;
 }
-/* #tiktok, #ytb, #X, #insta, #wiki{
-    padding: 5px;
-} */
 #tiktok a, #ytb a, #X a, #insta a, #wiki a{
     width: 100%;
 }
 #tiktok a button, #ytb a button, #X a button, #insta a button, #wiki a button{
     width: 100%;
     height: 25px;
-    font-size: 0.5em;
+    font-size: 0.9rem;
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     text-align: center;
-    align-content: center;
+    align-items: center;
     background-color:#f94c43;
-    /* background-image: ""; */
     border: none;
     border-radius: 20px;
     box-shadow:
@@ -414,20 +339,79 @@ div a button img{
     /* text-align: center; */
     align-content: center;
 }
-
 footer{
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: #f6d317;
-    padding: 10px;
+    /* padding: 1%; */
     max-height: 20vh;
     min-height: 10vh;
     text-align: start;
 
     
 }
-
 footer a{
     text-decoration: none;
     color: #fbff00;
 
+}
+/***** RESPONSIVE *****/
+/* @media screen and (max-width: 1750px) {
+    footer{
+        flex: 1;
+    }
+} */
+@media screen and (max-width: 1100px) {
+    img{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav a{
+        justify-content: space-around;    
+        font-size: 0.9rem;
+    }
+    /*** Page 2 ***/
+    .container, .container_reverse{
+        flex-direction: column;
+    }
+    .container img, .container_reverse img {
+        margin: auto;
+        justify-content: center;
+    }
+    .setlist{
+        margin: 0;
+        width: 100%;
+    }
+    .setlist ol{
+        justify-content: center;
+        flex-wrap: none;
+    }
+    .setlist ol li{
+        min-width: 300px;
+        margin: 0;
+    }
+    .date{
+        width: 90%;
+        margin: auto;
+    }
+    #tiktok a button, #ytb a button, #X a button, #insta a button, #wiki a button{
+        font-size: 0.5rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    nav ul{
+        gap: 20px;
+    }
+    nav li {
+        margin: 0;
+    }
+    nav a{
+        font-size: 0.7rem;
+    }
 }

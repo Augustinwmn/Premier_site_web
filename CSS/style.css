@@ -124,7 +124,7 @@ h1{
 }
 .parallax_img2 {
     background-image: url(../img/Capture+d’écran+2021-05-18+à+14.39.57.png);
-    height: 400px;
+    height: 600px;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -380,14 +380,8 @@ footer a{
 /***** RESPONSIVE *****/
 @media screen and (max-width: 1115px) {
     /*** Page 1 ***/
-    .parallax {
-        height: 400px;
-        width: 100%;
-    }
     .parallax_img2 {        
         background-image: url(../img/resval_grunt500x500.jpg);
-        height: 400px;
-        width: 100%;
     }
     /*** Page 2 ***/
     img{
@@ -422,14 +416,6 @@ footer a{
     /*** Page 1 ***/
     .acceuil{
         font-size: 0.9rem;
-    }    
-    .parallax {
-        height: 400px;
-        width: 100%;
-    }
-    .parallax_img2 {        
-        height: 400px;
-        width: 100%;
     }
     /*** Page 2 ***/
     .container, .container_reverse{
@@ -498,13 +484,9 @@ footer a{
         font-size: 0.7rem;
     }
     .parallax {
-        /* height: 400px;
-        width: 100%; */
         display: none;
     }
-    .parallax_img2 {        
-        /* height: 400px;
-        width: 100%; */
+    .parallax_img2 {
         display: none;
     }
     .p3{
@@ -513,11 +495,17 @@ footer a{
         border-bottom: 3px solid antiquewhite;
     }
     /*** Page 3 ***/
+    .content{
+        width: 40%;
+    }
+    .content:nth-child(5){
+        display: none;
+    }
     .a_propos a .savoir_plus{
-        width: 70%;
+        width: 50%;
     }
     .a_propos a .savoir_plus:hover{
-        width: 75%;
+        width: 55%;
     }
     /* FOOTER */
     #tiktok a button, #ytb a button, #X a button, #insta a button, #wiki a button{
@@ -536,4 +524,3 @@ footer a{
 
     }
 }
-

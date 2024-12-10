@@ -143,8 +143,9 @@ h1{
 .p2{
     padding-left: 10px;
 }
-.padding{
+.p3{
     padding: 10px;
+
 }
 
 a{
@@ -378,12 +379,7 @@ footer a{
 
 /***** RESPONSIVE *****/
 @media screen and (max-width: 1115px) {
-
-    /*** Page 2 ***/
-    img{
-        width: 300px;
-        height: 300px;
-    }
+    /*** Page 1 ***/
     .parallax {
         height: 400px;
         width: 100%;
@@ -393,6 +389,12 @@ footer a{
         height: 400px;
         width: 100%;
     }
+    /*** Page 2 ***/
+    img{
+        width: 300px;
+        height: 300px;
+    }
+
     /*** Page 3 ***/
     .a_propos p{
         display: none;
@@ -496,12 +498,19 @@ footer a{
         font-size: 0.7rem;
     }
     .parallax {
-        height: 400px;
-        width: 100%;
+        /* height: 400px;
+        width: 100%; */
+        display: none;
     }
     .parallax_img2 {        
-        height: 400px;
-        width: 100%;
+        /* height: 400px;
+        width: 100%; */
+        display: none;
+    }
+    .p3{
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-bottom: 3px solid antiquewhite;
     }
     /*** Page 3 ***/
     .a_propos a .savoir_plus{

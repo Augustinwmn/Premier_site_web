@@ -283,6 +283,7 @@ main p{
 .a_propos a .savoir_plus{
     transition: .3s;
     background-color: #f94c43;
+    margin-top: 3%;
     color: white;
     border: solid 3px transparent;
     border-radius: 10px;
